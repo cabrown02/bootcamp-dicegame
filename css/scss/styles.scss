@@ -1,0 +1,68 @@
+// 
+// FONT IMPORT
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@500&display=swap');
+
+// 
+// COLORS
+$color_base: #eeeded;
+$color_blue: #5c6e91;
+$color_red: #8f384d;
+$color_peach: #dd9866;
+
+// 
+// LAYOUT
+body {
+    color: $color_peach;
+    FONT-FAMILY: 'Lobster', cursive;
+
+    .container {
+        background-color: #EEEDED;
+        border-radius: 5px;
+        height: auto;
+        margin: 5% auto;
+        padding: 5%;
+        text-align: center;;
+        width: 80%;
+
+        .result {
+            font-size: 3.5rem;
+        }
+        
+        .btn {
+            background-color: #5c6e91;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            padding: 2% 5%;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: #485672;
+            }
+            
+            &:active {
+                border: none;
+            }
+        }
+
+        .players-wrapper {
+            display: flex;
+            justify-content: space-around;
+            margin: 2%;
+
+            .player {
+                padding: 2% 15% 15%;
+
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+.hide {
+    visibility: hidden;
+}
